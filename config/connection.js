@@ -39,6 +39,15 @@ async function connect() {
         console.log(`Added ${name} to the database`);
     }
 
+    con.addRole = async function (title, salary, department_id) {
+        await this.execute(`INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`, [title, salary, department_id]);
+        console.log(`Added ${title} to the database`);
+    }
+    
+    con.addEmployee = async function (first_name, last_name, role_id, manager_id) {
+        await this.execute(`INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`, [first_name, last_name, role_id, manager_id]);
+        console.log(`Added ${first_name} ${last_name} to the database`);
+    }
     
 
     return con;

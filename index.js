@@ -1,14 +1,3 @@
-const { connect } = require('./config/connection');
+const { main } = require('./lib/prompt');
 
-async function start() {
-    const db = await connect();
-
-    db.viewAllDepartments();
-    db.viewAllRoles();
-    db.viewAllEmployees();
-
-    // db.addDepartment('Driver');
-
-}
-
-start()
+main();
