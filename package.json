@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cfonts": "^3.2.0",
     "inquirer": "^8.2.4",
     "inquirer-tree-prompt": "^1.1.2",
     "mysql2": "^3.4.2"
