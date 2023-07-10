@@ -30,3 +30,8 @@ FROM employee e
 LEFT JOIN role r ON e.role_id = r.id
 LEFT JOIN department d ON r.department_id = d.id
 GROUP BY d.name;
+
+-- Find manager's employee_id 
+SELECT e.id
+FROM employee e
+WHERE CONCAT(e.first_name, ' ', e.last_name) = 'John Doe';
