@@ -22,7 +22,7 @@ This is a command-line content management system, using Node.js and MySQL. It al
 
 ## Screenshot
 
-![screen-capture](Assets/screencapture.png)
+![screen-capture](Assets/screencap.png)
 
 ## Installation  
 
