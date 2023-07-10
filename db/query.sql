@@ -35,3 +35,17 @@ GROUP BY d.name;
 SELECT e.id
 FROM employee e
 WHERE CONCAT(e.first_name, ' ', e.last_name) = 'John Doe';
+
+-- Find all employee
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS name
+FROM employee e;
+
+-- Update role
+UPDATE employee
+SET role_id = 10
+WHERE id = 5;
+
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS name, r.title AS title
+FROM employee e
+LEFT JOIN role r ON e.role_id = r.id
+WHERE 
