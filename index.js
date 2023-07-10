@@ -1,3 +1,3 @@
-const { main } = require('./lib/prompt');
+const { main } = require('./lib/menu');
 
 main();
