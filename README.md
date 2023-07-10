@@ -4,7 +4,7 @@
 
 ## Description  
 
-This is a command-line content management systems, using Node.js and MySQL. It allows user to manage a company's employee database.  
+This is a command-line content management system, using Node.js and MySQL. It allows users to manage a company's employee database.  
 
 ## Table of Contents  
 - [Link](#link)
